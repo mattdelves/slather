@@ -127,7 +127,7 @@ module Slather
     end
 
     def source_file_basename
-      File.basename(source_file_pathname, '.m')
+      File.basename(source_file_pathname, File.extname(source_file_pathname))
     end
 
     def supported_file_extensions

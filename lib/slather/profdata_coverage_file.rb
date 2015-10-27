@@ -93,11 +93,11 @@ module Slather
     end
 
     def source_file_basename
-      File.basename(source_file_pathname, '.swift')
+      File.basename(source_file_pathname, File.extname(source_file_pathname))
     end
 
     def supported_file_extensions
-      ["swift"]
+      ["swift", "m", "mm"]
     end
     private :supported_file_extensions
   end
