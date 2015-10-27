@@ -62,7 +62,7 @@ module Slather
     end
 
     def derived_data_dir
-      File.expand_path('~') + "/Library/Developer/Xcode/DerivedData/"
+      File.expand_path('~') + "/Library/Developer/Xcode/DerivedData"
     end
     private :derived_data_dir
 
